@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title></title>
+    <style media="screen">
+      body{
+        position: realtive;
+      }
+      .black{
+        animation: myAnim 1s ease 0s 1 normal forwards;
+        background: black;
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        top:300px;
+        left:500px;
+        transform: rotate(60deg);
+      }
+      @keyframes myAnim {0% {
+		transform: scale(2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+      .orange{
+        animation: myAnim 3s ease 0s infinite normal backwards;
+        width: 220px;
+        height:200px;
+        background:orange;
+        position: absolute;
+        top: 40px;
+        left: 100px;
+      }
+      @keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+      .grey{width: 200px;
+      height:200px;
+      background:grey;
+      border-radius: 100%;
+      position: absolute;
+      top: 40px;
+      left: 700px;
+      animation: myAnim 1s ease 0s infinite normal backwards;
+      }
+      @keyframes myAnim {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(100px);
+	}
+}
+      .blue{
+        animation: myAnim 1s ease 0s infinite normal backwards;
+      background: blue;
+      width: 20px;
+      height: 500px;
+      position: absolute;
+      top:100px;
+      left:600px;
+      transform: rotate(40deg);
+      }
+      @keyframes myAnim {
+	0% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(1000px);
+	}
+}
+      .purple{  width: 250px;
+        animation: myAnim 1s ease 0s infinite normal backwards;
+        height:40px;
+        background-color: #6E00FF;;
+        position: absolute;
+        top: 50px;
+        left: 400px;
+        transform: rotate(90deg);
+      }
+      .yellow{width: 500px;
+        animation: myAnim 1s ease 0s infinite normal backwards;
+    height:200px;
+    background:yellow;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    left: 900px;
+
+  }
+  </style>
+  </head>
+  <body>
+    <div class="black"></div>
+    <div class="orange"></div>
+    <div class="grey"></div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="purple"></div>
+
+
+  </body>
+</html>
